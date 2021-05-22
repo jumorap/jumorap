@@ -1,0 +1,74 @@
+.general-nav {
+    background-color: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #EFEFEF;
+    position: fixed;
+    top: 0;
+    font-size: 18px;
+    height: 20px;
+    z-index: 1;
+}
+
+.bar-features {
+    font-family: sans-serif;
+    line-height: 1;
+    width: 100%;
+}
+
+.contact-bar {
+    position: fixed;
+    z-index: 2;
+    top: 38px;
+    background-color: #E0E0E0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #1F1F1F;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 3px rgba(50, 50, 50, 0.8);
+}
+
+.ul-header {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.hamburger-menu {
+    left: 5%;
+}
+
+.home {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.github {
+    right: 5%;
+}
+
+li {
+    display: inline;
+}
+
+.specs-icons {
+    position: absolute;
+    color: #EFEFEF;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
