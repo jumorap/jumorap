@@ -19,10 +19,10 @@
 }
 
 .contact-bar {
-    position: fixed;
-    z-index: 2;
+    position: absolute;
+    z-index: 0;
     top: 38px;
-    background-color: #E0E0E0;
+    background-color: rgba(224, 224, 224, 1);
     align-items: center;
     justify-content: center;
     text-align: center;

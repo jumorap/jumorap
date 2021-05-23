@@ -46,7 +46,7 @@ export default function Education() {
     }
 
     return (
-        <div className={"summary-container"}>
+        <div className={"summary-container summary-container-education"}>
             <div className={"summary-land education-land"}>
                 <ul>
                     <li>
