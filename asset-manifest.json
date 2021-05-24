@@ -1,28 +1,23 @@
 {
   "files": {
-    "main.css": "/jumorap.github.io/jumorap/static/css/main.bbc891e1.chunk.css",
-    "main.js": "/jumorap.github.io/jumorap/static/js/main.f34be073.chunk.js",
-    "main.js.map": "/jumorap.github.io/jumorap/static/js/main.f34be073.chunk.js.map",
-    "runtime-main.js": "/jumorap.github.io/jumorap/static/js/runtime-main.1d3c7dba.js",
-    "runtime-main.js.map": "/jumorap.github.io/jumorap/static/js/runtime-main.1d3c7dba.js.map",
-    "static/js/2.18284ba9.chunk.js": "/jumorap.github.io/jumorap/static/js/2.18284ba9.chunk.js",
-    "static/js/2.18284ba9.chunk.js.map": "/jumorap.github.io/jumorap/static/js/2.18284ba9.chunk.js.map",
-    "static/js/3.5fe30f1e.chunk.js": "/jumorap.github.io/jumorap/static/js/3.5fe30f1e.chunk.js",
-    "static/js/3.5fe30f1e.chunk.js.map": "/jumorap.github.io/jumorap/static/js/3.5fe30f1e.chunk.js.map",
-    "index.html": "/jumorap.github.io/jumorap/index.html",
-    "static/css/main.bbc891e1.chunk.css.map": "/jumorap.github.io/jumorap/static/css/main.bbc891e1.chunk.css.map",
-    "static/js/2.18284ba9.chunk.js.LICENSE.txt": "/jumorap.github.io/jumorap/static/js/2.18284ba9.chunk.js.LICENSE.txt",
-    "static/media/gameOfLife.dffab29b.png": "/jumorap.github.io/jumorap/static/media/gameOfLife.dffab29b.png",
-    "static/media/linusTorvalds.4ff44276.png": "/jumorap.github.io/jumorap/static/media/linusTorvalds.4ff44276.png",
-    "static/media/main.css": "/jumorap.github.io/jumorap/static/media/principalBack.13d120f3.jpg",
-    "static/media/redBoardLogo.8cb17c5a.png": "/jumorap.github.io/jumorap/static/media/redBoardLogo.8cb17c5a.png",
-    "static/media/salieri.eda3174b.png": "/jumorap.github.io/jumorap/static/media/salieri.eda3174b.png",
-    "static/media/unal.b4493ad7.png": "/jumorap.github.io/jumorap/static/media/unal.b4493ad7.png"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.1d3c7dba.js",
-    "static/js/2.18284ba9.chunk.js",
-    "static/css/main.bbc891e1.chunk.css",
-    "static/js/main.f34be073.chunk.js"
-  ]
+    "main.css": "jumorap.github.io/jumorap/static/css/main.aebcad6b.chunk.css",
+    "main.js": "jumorap.github.io/jumorap/static/js/main.d7cba359.chunk.js",
+    "main.js.map": "jumorap.github.io/jumorap/static/js/main.d7cba359.chunk.js.map",
+    "runtime~main.js": "jumorap.github.io/jumorap/static/js/runtime~main.25662646.js",
+    "runtime~main.js.map": "jumorap.github.io/jumorap/static/js/runtime~main.25662646.js.map",
+    "static/js/2.1eae7bdc.chunk.js": "jumorap.github.io/jumorap/static/js/2.1eae7bdc.chunk.js",
+    "static/js/2.1eae7bdc.chunk.js.map": "jumorap.github.io/jumorap/static/js/2.1eae7bdc.chunk.js.map",
+    "static/js/3.e44b0f6c.chunk.js": "jumorap.github.io/jumorap/static/js/3.e44b0f6c.chunk.js",
+    "static/js/3.e44b0f6c.chunk.js.map": "jumorap.github.io/jumorap/static/js/3.e44b0f6c.chunk.js.map",
+    "index.html": "jumorap.github.io/jumorap/index.html",
+    "precache-manifest.9fc3af4a56050fb58093ebe6fc9ec133.js": "jumorap.github.io/jumorap/precache-manifest.9fc3af4a56050fb58093ebe6fc9ec133.js",
+    "service-worker.js": "jumorap.github.io/jumorap/service-worker.js",
+    "static/css/main.aebcad6b.chunk.css.map": "jumorap.github.io/jumorap/static/css/main.aebcad6b.chunk.css.map",
+    "static/media/gameOfLife.png": "jumorap.github.io/jumorap/static/media/gameOfLife.a591f1d2.png",
+    "static/media/linusTorvalds.png": "jumorap.github.io/jumorap/static/media/linusTorvalds.7779f4d5.png",
+    "static/media/main.css": "jumorap.github.io/jumorap/static/media/principalBack.64dc2d33.jpg",
+    "static/media/redBoardLogo.png": "jumorap.github.io/jumorap/static/media/redBoardLogo.5a902f03.png",
+    "static/media/salieri.png": "jumorap.github.io/jumorap/static/media/salieri.96abb3bb.png",
+    "static/media/unal.png": "jumorap.github.io/jumorap/static/media/unal.41fb5c58.png"
+  }
 }
