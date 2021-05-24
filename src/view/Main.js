@@ -3,7 +3,6 @@ import "../css/main.css"
 import NavbarGeneral from "../components/NavbarGeneral"
 import CardsCollection from "../components/CardsCollection"
 import Education from "../components/Education"
-import AboutAndContact from "../components/AboutAndContact";
 import LastLine from "../components/LastLine";
 
 
@@ -34,10 +33,9 @@ export default function Main() {
                 <Education/>
             </section>
 
-            <LastLine/>
-
-            <div className={"principal-land"}>
-            </div>
+            <section id={"skills"}>
+                <LastLine/>
+            </section>
         </>
     )
 }

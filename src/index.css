@@ -5,9 +5,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #222 ;
   overflow-x: hidden;
-
   line-height: 1.1;
   letter-spacing: -0.007em;
+  font-weight: 400;
 }
 
 code {

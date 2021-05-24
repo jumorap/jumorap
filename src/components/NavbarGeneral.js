@@ -1,23 +1,48 @@
-import React from "react"
+import React, { useState } from "react"
 import "../css/navbar.css"
+import "../css/menu.css"
 import { FaGithubAlt, FaHamburger, FaHome } from "react-icons/fa"
-import { GrMail } from "react-icons/all"
+import { CgClose, GrMail } from "react-icons/all"
 
 
 export default function NavbarGeneral() {
+    const [open, setOpen] = useState(false);
+    const menuOptionsClick = [
+        {option: "Home", url: "/#home"},
+        {option: "Projects", url: "/#projects"},
+        {option: "Education", url: "/#education"},
+        {option: "About Me", url: "/#about"},
+        {option: "Skills", url: "/#skills"},
+        {option: "Contact Me", url: "/#contact"},
+    ]
+
+    function menu(specificStyle) {
+        return (
+            <div className={"menu-container"} style={specificStyle}>
+                    {menuOptionsClick.map((signature) => (
+                        <a href={signature.url} onClick={() => setOpen(!open)} className={"links-menu-navigation"}>
+                            {signature.option}<br/>
+                        </a>
+                    ))}
+            </div>
+        )
+    }
+
     return (
         <>
             <div className={"general-nav bar-features"}>
                 <ul className={"ul-header"}>
-                    <li className={"hamburger-menu specs-icons"}>
-                        <FaHamburger/>
+                    <li className={"hamburger-menu specs-icons"}
+                        onClick={() => setOpen(!open)}>
+                        {!open ? (<FaHamburger/>) : (<CgClose/>)}
                     </li>
                     <a href={"/#home"}>
-                    <li className={"home specs-icons"}>
+                    <li className={"home specs-icons"}
+                        onClick={() => setOpen(!open)}>
                         <FaHome/>
                     </li>
                     </a>
-                    <a href={"https://github.com/jumorap"} target={"_blank"}>
+                    <a href={"https://github.com/jumorap"} target={"_blank"} rel="noreferrer">
                         <li className={"github specs-icons"}>
                             <FaGithubAlt/>
                         </li>
@@ -33,6 +58,13 @@ export default function NavbarGeneral() {
                     Contact me
                 </a>
             </div>
+
+            {open ? (
+                menu()
+            ) : (
+                menu({top: "-150%", backgroundColor: "rgba(244, 244, 244, 0)"})
+            )
+            }
         </>
     )
 }
