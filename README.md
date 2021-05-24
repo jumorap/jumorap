@@ -1,4 +1,4 @@
 # Portfolio
 
-Click [http://localhost:3000](here) to view it
+Click [here](here) to view it
 
