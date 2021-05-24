@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/jumorap/static/css/main.b7a9cade.chunk.css",
+    "main.js": "/jumorap/static/js/main.5f96290e.chunk.js",
+    "main.js.map": "/jumorap/static/js/main.5f96290e.chunk.js.map",
+    "runtime-main.js": "/jumorap/static/js/runtime-main.ad75e958.js",
+    "runtime-main.js.map": "/jumorap/static/js/runtime-main.ad75e958.js.map",
+    "static/js/2.18284ba9.chunk.js": "/jumorap/static/js/2.18284ba9.chunk.js",
+    "static/js/2.18284ba9.chunk.js.map": "/jumorap/static/js/2.18284ba9.chunk.js.map",
+    "static/js/3.5fe30f1e.chunk.js": "/jumorap/static/js/3.5fe30f1e.chunk.js",
+    "static/js/3.5fe30f1e.chunk.js.map": "/jumorap/static/js/3.5fe30f1e.chunk.js.map",
+    "index.html": "/jumorap/index.html",
+    "static/css/main.b7a9cade.chunk.css.map": "/jumorap/static/css/main.b7a9cade.chunk.css.map",
+    "static/js/2.18284ba9.chunk.js.LICENSE.txt": "/jumorap/static/js/2.18284ba9.chunk.js.LICENSE.txt",
+    "static/media/gameOfLife.dffab29b.png": "/jumorap/static/media/gameOfLife.dffab29b.png",
+    "static/media/linusTorvalds.4ff44276.png": "/jumorap/static/media/linusTorvalds.4ff44276.png",
+    "static/media/main.css": "/jumorap/static/media/principalBack.13d120f3.jpg",
+    "static/media/redBoardLogo.8cb17c5a.png": "/jumorap/static/media/redBoardLogo.8cb17c5a.png",
+    "static/media/salieri.eda3174b.png": "/jumorap/static/media/salieri.eda3174b.png",
+    "static/media/unal.b4493ad7.png": "/jumorap/static/media/unal.b4493ad7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad75e958.js",
+    "static/js/2.18284ba9.chunk.js",
+    "static/css/main.b7a9cade.chunk.css",
+    "static/js/main.5f96290e.chunk.js"
+  ]
+}
