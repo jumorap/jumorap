@@ -1,5 +1,5 @@
 .general {
-    background-image: url("../assets/principalBack.jpg");
+    background-image: url("../assets/principalBack.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -15,13 +15,44 @@
     left: 0;
 }
 
+.name-presentation {
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -0.007em;
+    margin-block-start: 0.55em;
+    margin-block-end: 0.55em;
+    display: block;
+}
+
+.subtitle-developer {
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.007em;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    font-size: 20px;
+    display: block;
+}
+
 .principal-land {
     width: 100%;
-    height: 84%;
+    height: 82%;
     background-color: transparent;
     align-items: center;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+}
+
+.foot-main {
+    height: 100px;
+    background-color: #000;
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .bg-text {
@@ -76,7 +107,7 @@
     width: 50%;
     background-color: rgba(30, 30, 30, 0.9);
     color: #EFEFEF;
-    padding: 20px;
+    padding: 18px;
     margin: 5px;
     box-sizing: border-box;
 }
@@ -173,6 +204,7 @@
     margin-block-end: 0.2em;
     margin-inline-start: 0;
     margin-inline-end: 0;
+    color: rgba(244, 244, 244, 1);
 }
 
 .image-card:hover {

@@ -20,7 +20,12 @@ export default function NavbarGeneral() {
         return (
             <div className={"menu-container"} style={specificStyle}>
                     {menuOptionsClick.map((signature) => (
-                        <a href={signature.url} onClick={() => setOpen(!open)} className={"links-menu-navigation"}>
+                        <a href={signature.url}
+                           onClick={() => setOpen(!open)}
+                           className={"links-menu-navigation"}
+                           aria-label={signature.option}
+                           title={signature.option}
+                        >
                             {signature.option}<br/>
                         </a>
                     ))}
@@ -36,22 +41,35 @@ export default function NavbarGeneral() {
                         onClick={() => setOpen(!open)}>
                         {!open ? (<FaHamburger/>) : (<CgClose/>)}
                     </li>
-                    <a href={"/#home"}>
-                    <li className={"home specs-icons"}
-                        onClick={() => setOpen(!open)}>
-                        <FaHome/>
+                    <li>
+                        <a href={"/#home"}
+                           aria-label={"Home"}
+                           title={"Home"}
+                           className={"home specs-icons"}
+                        >
+                            <FaHome/>
+                        </a>
                     </li>
-                    </a>
-                    <a href={"https://github.com/jumorap"} target={"_blank"} rel="noreferrer">
-                        <li className={"github specs-icons"}>
+                    <li>
+                        <a href={"https://github.com/jumorap"}
+                           target={"_blank"}
+                           rel="noreferrer"
+                           aria-label={"GitHub"}
+                           title={"GitHub"}
+                           className={"github specs-icons"}
+                        >
                             <FaGithubAlt/>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <div className={"contact-bar bar-features"} >
-                <a href={"mailto:jumorap@unal.edu.co"} className={"contact-link"}>
+                <a href={"mailto:jumorap@unal.edu.co"}
+                   className={"contact-link"}
+                   aria-label={"email"}
+                   title={"email"}
+                >
                     <span className={"no-sub"}>
                         <GrMail style={{fontSize: "12px"}}/>&nbsp;
                     </span>
@@ -62,7 +80,7 @@ export default function NavbarGeneral() {
             {open ? (
                 menu()
             ) : (
-                menu({top: "-150%", backgroundColor: "rgba(244, 244, 244, 0)"})
+                menu({top: "-550%", backgroundColor: "rgba(244, 244, 244, 0.1)", color: "transparent", transitionDuration: "3000ms"})
             )
             }
         </>

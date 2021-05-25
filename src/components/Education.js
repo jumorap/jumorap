@@ -68,12 +68,12 @@ export default function Education() {
                                 </span>
                                 National University of Colombia, Bogotá
                             </h2>
+                            <br/>
                         </li>
-                        <br/>
                         {completeList(<FaGraduationCap/>,"Anticipated Graduation","DEC. 2023")}
                         {completeList(<CgMathDivide/>, "GPA","4,3 / 5,0")}
-                        <h3><FaLightbulb/>&nbsp;Relevant Coursework:</h3>
-                        {relevantCoursework()}
+                        <li><h3><FaLightbulb/>&nbsp;Relevant Coursework:</h3></li>
+                        <li>{relevantCoursework()}</li>
 
                     </ul>
                 </div>
@@ -82,7 +82,7 @@ export default function Education() {
                 <div className={"education-land-right summary-land"} >
                     <ul className={"ul-formatted"}>
                         <li>
-                            <img src={unal} className={"unal-logo"} alt={""}/>
+                            <img src={unal} className={"unal-logo"} alt={"logo national university of colombia"}/>
                         </li>
                         <li>
                             <p/>

@@ -35,7 +35,7 @@ import Fade from "react-reveal/Fade";
 
 export default function LastLine() {
 
-    const aboutDef = "Colombian, TI manager with more than 3 years of experience in projects where CI/CD model was implemented. Android developer over different technologies as Kotlin, Flutter, Java & React Native; website developer in React JS & DJango; freelancer as Discord & Twitch BOT developer and web data miner. Undergraduate of Computer and Systems Engineer and eternal student of life."
+    const aboutDef = "Colombian, IT manager with more than 3 years of experience in projects where CI/CD model was implemented. Android developer over different technologies as Kotlin, Flutter, Java & React Native; website developer in React JS & DJango; freelancer as Discord & Twitch BOT developer and web data miner. Undergraduate of Computer and Systems Engineer. An Eternal student of life."
     const listForProgrammingTable = [
         {logo: <FaPython/>, languagePro: "Python", timePro: "4 years"},
         {logo: <FaJava/>, languagePro: "Java", timePro: "5 years"},
@@ -204,7 +204,9 @@ export default function LastLine() {
                     <div className={"contact-for-each"}>
                         <b>{title}</b>
                         <span className={"options-list"}>{subtitle}</span>
-                        <a href={link}>{refLink}</a>
+                        <a href={link} aria-label={title} title={title}>
+                            {refLink}
+                        </a>
                     </div>
                 </div>
             </>
