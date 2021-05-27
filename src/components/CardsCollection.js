@@ -5,6 +5,7 @@ import redboard from "../assets/redBoardLogo.png";
 import healthHistory from "../assets/upapp.png";
 import gameOfLife from "../assets/gameOfLife.png";
 import linusTorvalds from "../assets/linusTorvalds.webp"
+import opera from "../assets/opera.png"
 
 
 export default function CardsCollection() {
@@ -18,7 +19,7 @@ export default function CardsCollection() {
                 fUrl={"https://github.com/jumorap/SalieriUN"}
                 fAltCase={"personal assistant salieriun mobile android app project"}
                 sTitle={"Red Board"}
-                sContent={"With a teamwork of 7 engineering students, we built a web to share class notes with the University students. In the first place, to Students from National University of Colombia."}
+                sContent={"With a teamwork of 7 engineering students, we built a web to share class notes with the University students. In first place, to Students from National University of Colombia."}
                 sImg={redboard}
                 sImgWidth={"70%"}
                 sUrl={"https://github.com/jumorap/red-board"}
@@ -45,12 +46,12 @@ export default function CardsCollection() {
                 fImgWidth={"90%"}
                 fUrl={"https://github.com/jumorap/HealthHistory"}
                 fAltCase={"mobile android app to help people with their medical record"}
-                sTitle={"COMPLETE"}
-                sContent={"COMPLETE"}
-                sImg={""}
-                sImgWidth={"70%"}
-                sUrl={"https://github.com/jumorap/mine_google_images"}
-                sAltCase={"to complete"}
+                sTitle={"Opera Extension Generator"}
+                sContent={"(Open Source) With a singles input, generates an Opera sidebar extension, rendering a webpage that the user requires."}
+                sImg={opera}
+                sImgWidth={"80%"}
+                sUrl={"https://github.com/jumorap/opera-extension-generator"}
+                sAltCase={"tool to create opera extensions with a singles input"}
             />
         </>
     )
