@@ -32,12 +32,13 @@ export default function Education() {
             {programme: "OOP"},
             {programme: "Calculus (I, II, III)"},
             {programme: "Discrete Math (I, II)"},
-            {programme: "Data Base System (SQL, NoSQL)"},
+            {programme: "Data Base System SQL & NoSQL"},
             {programme: "Linear Algebra"},
             {programme: "Probability Theory"},
             {programme: "Numerical Methods"},
             {programme: "Theory of Computation"},
             {programme: "Software Engineering"},
+            {programme: "Python for Data Science (IBM)"},
         ]
 
         return (

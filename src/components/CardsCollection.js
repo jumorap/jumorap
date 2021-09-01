@@ -19,10 +19,10 @@ export default function CardsCollection() {
                 fUrl={"https://github.com/jumorap/SalieriUN"}
                 fAltCase={"personal assistant salieriun mobile android app project"}
                 sTitle={"Red Board"}
-                sContent={"With a teamwork of 7 engineering students, we built a web to share class notes with the University students. In first place, to Students from National University of Colombia."}
+                sContent={"With a teamwork of 7 engineering students, we built a web to share class notes with the University students. In first place, to Students from National University of Colombia with 54k+ users."}
                 sImg={redboard}
                 sImgWidth={"70%"}
-                sUrl={"https://github.com/jumorap/red-board"}
+                sUrl={"https://redboardun.com"}
                 sAltCase={"red-board (redboard) react js app project"}
             />
             <Cards

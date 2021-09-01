@@ -27,8 +27,8 @@ import {
     SiDjango, SiGmail,
     SiGo,
     SiKotlin,
-    SiMathworks,
-    SiSkillshare
+    SiMathworks, SiMongodb,
+    SiSkillshare, SiTypescript
 } from "react-icons/all";
 import Fade from "react-reveal/Fade";
 
@@ -46,6 +46,7 @@ export default function LastLine() {
         {logo: <SiMathworks/>, languagePro: "MATLB", timePro: "1 year"},
         {logo: <SiCsharp/>, languagePro: "C#", timePro: "8 months"},
         {logo: <SiGo/>, languagePro: "Golang", timePro: "6 months"},
+        {logo: <SiTypescript/>, languagePro: "TypeScript", timePro: "6 months"},
     ]
 
     const listForTechTable = [
@@ -59,6 +60,7 @@ export default function LastLine() {
         {logo: <IoLogoFirebase/>, tech: "Firebase"},
         {logo: <DiGoogleCloudPlatform/>, tech: "Google Cloud"},
         {logo: <DiHeroku/>, tech: "Heroku"},
+        {logo: <SiMongodb/>, tech: "MongoDB"},
         {logo: <CgOpenCollective/>, tech: "OpenCV"},
         {logo: <DiMysql/>, tech: "MySQL"},
         {logo: <RiChromeFill/>, tech: "Selenium"},
@@ -150,6 +152,7 @@ export default function LastLine() {
         const listSoftSkills = [
             {programme: "Clear communication"},
             {programme: "Empathy"},
+            {programme: "Leadership"},
             {programme: "Teamwork"},
             {programme: "Adaptability"},
             {programme: "Creativity"},
@@ -204,7 +207,12 @@ export default function LastLine() {
                     <div className={"contact-for-each"}>
                         <b>{title}</b>
                         <span className={"options-list"}>{subtitle}</span>
-                        <a href={link} aria-label={title} title={title}>
+                        <a href={link}
+                           aria-label={title}
+                           title={title}
+                           target={"_blank"}
+                           rel={"noreferrer"}
+                        >
                             {refLink}
                         </a>
                     </div>
@@ -226,7 +234,7 @@ export default function LastLine() {
                     <FaDiscord/>,
                     "Via Discord",
                     "Jumorap#8334",
-                    "https://discord.com/app",
+                    "https://discordapp.com/users/464533208814321665",
                     "Go to Discord")}
                 {listComplementContact(
                     <FaGithub/>,
