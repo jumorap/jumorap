@@ -15,7 +15,7 @@ export default function Main() {
             <div className={"general"}/>
             <section id={"home"} className={"principal-land"}>
                 <main className={"bg-text"}>
-                    <h1 className={"name-presentation"}>I am Juan Mora</h1>
+                    <h1 className={"name-presentation"}>I'm Juan Mora</h1>
                     <span className={"subtitle-developer"}>And I'm a Developer</span>
                     <FaCode/>
                 </main>

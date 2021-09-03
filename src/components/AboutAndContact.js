@@ -9,7 +9,7 @@ export default function AboutAndContact({idSection, title, subTitle, component, 
             <div className={"summary-container"}>
                 <ul className={"ul-formatted-start"}>
                     <li className={"text-about"}>
-                            {subTitle}
+                        {subTitle}
                     </li>
                 </ul>
             </div>

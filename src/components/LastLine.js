@@ -35,7 +35,11 @@ import Fade from "react-reveal/Fade";
 
 export default function LastLine() {
 
-    const aboutDef = "Colombian, IT manager with more than 3 years of experience in projects where CI/CD model was implemented. Android developer over different technologies as Kotlin, Flutter, Java & React Native; website developer in React JS & DJango; freelancer as Discord & Twitch BOT developer and web data miner. Undergraduate of Computer and Systems Engineer. An Eternal student of life."
+    const aboutDef = "Colombian, IT manager with more than 3 years of experience in projects where CI/CD model was " +
+        "implemented. Android developer over different technologies as Kotlin, Flutter, Java & React Native; website " +
+        "developer in React JS & DJango; freelancer as Discord & Twitch BOT developer and web data miner. " +
+        "Devops engineer working on various amazing projects! Undergraduate of Computer and Systems Engineer. " +
+        "An Eternal student of life."
     const listForProgrammingTable = [
         {logo: <FaPython/>, languagePro: "Python", timePro: "4 years"},
         {logo: <FaJava/>, languagePro: "Java", timePro: "5 years"},
