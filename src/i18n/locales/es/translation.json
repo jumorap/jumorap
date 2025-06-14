@@ -1,0 +1,243 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "role": "Ingeniero de Software",
+    "cta": "Contáctame",
+    "leading": "Liderando",
+    "that": "soluciones eficientes que",
+    "connect": "conectan",
+    "systems": "sistemas de",
+    "highImpact": "alto impacto"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Ingeniero de Sistemas y Computación con más de 5 años de experiencia en desarrollo y arquitectura de software, especializado en soluciones backend, despliegue de sistemas en la nube y automatización. He liderado proyectos fullstack utilizando herramientas modernas con enfoque en rendimiento, infraestructura como código y alta disponibilidad. Me destaco por mis habilidades de liderazgo y pasión por la mejora continua en el diseño de soluciones eficientes que optimizan la comunicación entre componentes del sistema y aseguran la alta calidad del software. Busco nuevos retos que fortalezcan mis capacidades técnicas y me permitan liderar proyectos innovadores y de alto impacto.",
+    "architecture": "Arquitectura",
+    "architectureExperience": "Experiencia en",
+    "designAndDevelopment": "diseño y desarrollo",
+    "scalableArchitectures": "de arquitecturas escalables para aplicaciones web y móviles, implementando",
+    "designPatterns": "patrones de diseño",
+    "bestPractices": "y mejores prácticas.",
+    "automation": "Automatización",
+    "implementationOf": "Implementación de",
+    "automatedWorkflows": "flujos de trabajo automatizados",
+    "forCiCd": "para CI/CD, pruebas y despliegue, mejorando la",
+    "efficiency": "eficiencia",
+    "reducingErrors": "y reduciendo errores en el proceso de desarrollo.",
+    "highAvailability": "Alta Disponibilidad",
+    "designOf": "Diseño de",
+    "robustSystems": "sistemas robustos",
+    "withHighAvailability": "con alta disponibilidad y tolerancia a fallos, asegurando la",
+    "serviceContinuity": "continuidad del servicio",
+    "inCriticalEnvironments": "en entornos críticos.",
+    "softSkills": "Habilidades Blandas",
+    "clearCommunication": "Comunicación clara",
+    "empathy": "empatía",
+    "leadership": "liderazgo",
+    "teamwork": "trabajo en equipo",
+    "adaptability": "adaptabilidad",
+    "creativityAndProblemSolving": "creatividad y resolución de problemas"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "languages": "Lenguajes de Programación",
+    "frameworks": "Frameworks",
+    "databases": "Bases de Datos",
+    "devops": "DevOps",
+    "cloud": "Nube",
+    "others": "Otros"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "present": "Presente",
+    "technologies": "Tecnologías",
+    "astraty": {
+      "institution": "Astraty SAS",
+      "link": "https://astraty.com",
+      "role": "CEO",
+      "period": "May 2025 - Presente",
+      "description": "CEO de la empresa Astraty SAS, líder en desarrollo de software y consultoría tecnológica. Experiencia en diseño y desarrollo de aplicaciones web y móviles, incluyendo arquitectura de software, automatización de procesos, despliegue en la nube y gestión de proyectos.",
+      "technologies": [
+        "Liderazgo técnico",
+        "Arquitectura de software",
+        "Desarrollo de software",
+        "Automatización de procesos",
+        "Gestión de proyectos",
+        "Infraestructura en la nube",
+        "Análisis de requerimientos",
+        "Consultoría tecnológica",
+        "Estrategia empresarial",
+        "Scrum",
+        "Agile",
+        "Comunicación efectiva",
+        "Negociación con clientes",
+        "Planificación estratégica",
+        "Gestión de equipos",
+        "Toma de decisiones técnicas",
+        "Diseño de soluciones escalables"
+      ]
+    },
+    "lab101": {
+      "institution": "LAB101 UNAL (Laboratorio de innovación, creatividad y nuevas tecnologías)",
+      "link": "https://web.unal.edu.co/lab101",
+      "role": "Desarrollador Backend",
+      "period": "Jun 2022 - May 2025",
+      "description": "Desarrollador Backend, administrador de sistema y líder del equipo de backend en la construcción de sistemas desde la Universidad Nacional de Colombia. Experiencia en diseño y desarrollo de aplicaciones web y móviles, incluyendo arquitectura de software, automatización de procesos, despliegue en la nube y gestión de proyectos."
+    },
+    "freelance": {
+      "institution": "Freelance",
+      "link": "#",
+      "role": "Desarrollador Fullstack",
+      "period": "Nov 2020 - Feb 2022",
+      "description": "Desarrollador fullstack y consultor para el diseño e implementación de soluciones de software a la medida, integrando sistemas, optimizando procesos y creando experiencias digitales eficientes para clientes de diversas industrias. Realicé capacitaciones y asesorías para la adopción de herramientas DevOps y buenas prácticas de desarrollo."
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "gpa": "Promedio",
+    "unal": {
+      "key": "unal-ing-sys",
+      "institution": "Universidad Nacional de Colombia",
+      "degree": "Ingeniería de Sistemas y Computación",
+      "period": "Ene 2019 - Oct 2024",
+      "description": "GPA: 4,3/5,0. con un GPA de 4.3/5.0. Formación sólida en estructuras de datos, programación orientada a objetos, bases de datos SQL y NoSQL, teoría de la computación y métodos numéricos. Conocimientos avanzados en cálculo diferencial, integral y multivariable, matemática discreta, álgebra lineal y teoría de la probabilidad. Experiencia en diseño y desarrollo de software aplicando principios de arquitectura e ingeniería de software y metodologías ágiles, con enfoque en la resolución eficiente de problemas computacionales y el desarrollo de sistemas escalables y bien estructurados."
+    },
+    "coursera": {
+      "key": "coursera-ucsd",
+      "institution": "Coursera - University of California San Diego",
+      "degree": "Algorithmic Toolbox",
+      "period": "Dic 2021 - Ene 2022",
+      "description": "Formación intensiva en resolución de problemas computacionales, diseño de algoritmos eficientes y optimización de código. Enfoque práctico con proyectos en ordenación, búsqueda, divide y vencerás, algoritmos codiciosos y programación dinámica utilizando Python."
+    },
+    "ibm1": {
+      "key": "ibm-cc-data-analysis",
+      "institution": "IBM Cognitive Class",
+      "degree": "Data Analysis with Python",
+      "period": "Abr 2021 - Oct 2021",
+      "description": "Especialización enfocada en técnicas de análisis de datos utilizando Python. El curso abarca desde la manipulación y limpieza de datos con pandas y NumPy, hasta la aplicación de estadísticas descriptivas, regresión lineal y agrupamiento con scikit-learn. Se trabaja en la preparación, exploración y transformación de conjuntos de datos reales para extraer conclusiones significativas y construir modelos predictivos. Este curso refuerza habilidades esenciales para roles en ciencia de datos, business intelligence y análisis estadístico."
+    },
+    "ibm2": {
+      "key": "ibm-cc-data-visualization",
+      "institution": "IBM Cognitive Class",
+      "degree": "Data Visualization with Python",
+      "period": "Abr 2021 - Oct 2021",
+      "description": "Curso orientado al desarrollo de habilidades de visualización de datos con bibliotecas como Matplotlib, Seaborn y Folium. Enseña cómo representar información de manera efectiva a través de gráficos de líneas, barras, histogramas, mapas de calor y visualizaciones geoespaciales. Se hace énfasis en la narrativa visual y en cómo adaptar los gráficos a distintos tipos de audiencias. Ideal para profesionales que necesitan comunicar insights de datos de forma clara y persuasiva."
+    },
+    "ibm3": {
+      "key": "ibm-cc-python-for-data-science",
+      "institution": "Python for Data Science",
+      "degree": "Python para Ciencia de Datos",
+      "period": "Abr 2021 - Oct 2021",
+      "description": "Curso introductorio al lenguaje Python con enfoque en ciencia de datos. Cubre fundamentos del lenguaje como tipos de datos, estructuras de control, funciones, manejo de archivos y módulos. Se profundiza en bibliotecas esenciales como Pandas y NumPy para la manipulación eficiente de datos, y se introduce el uso de APIs y Jupyter Notebooks como herramientas clave en el flujo de trabajo de análisis de datos. Es una base sólida para quienes buscan iniciar una carrera en data science o machine learning."
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "technologies": "Tecnologías",
+    "links": "Enlaces",
+    "pscript": {
+      "name": "PScript",
+      "description": "Lenguaje de programación probabilístico basado en Python3 que permite definir y ejecutar modelos probabilísticos, simplificando la implementación y ejecución de modelamiento probabilístico y estadístico. Incorpora estructuras de datos estocásticas, distribuciones matemáticas y control de flujo.",
+      "technologies": [
+        "Python",
+        "PLY (Python lex yacc)",
+        "Modelos Probabilísticos",
+        "Distribuciones de Probabilidad",
+        "Estadística",
+        "Programación Estocástica"
+      ]
+    },
+    "redBoard": {
+      "name": "RedBoard",
+      "description": "Plataforma web diseñada fáilitar la publicación de apuntes de clase y otros recursos académicos entre estudiantes universitarios, diseñada para facilitar el acceso a recursos académicos entre pares, promoviendo el aprendizaje colaborativo. Inicialmente dirigida a los estudiantes de la Universidad Nacional de Colombia, disponible para los 54k+ usuarios de la institución."
+    },
+    "freeMailSender": {
+      "name": "Free Mail Sender",
+      "description": "Plugin para Strapi que simplifica el envío de correos electrónicos a través de la API REST utilizando distintos proveedores y personalizar el contenido del mensaje según las necesidades específicas. Además hace uso de un sistema de llaves asimétricas"
+    },
+    "customDeepPopulate": {
+      "name": "Custom Deep Populate",
+      "description": "Plugin para Strapi que simplifica la población de estructuras de contenido complejas a través de la API REST. Permitiendo definir una profundidad personalizada para la obtención de datos, eliminar campos no deseados y filtrar campos anidados."
+    },
+    "siaWa": {
+      "name": "SIA-WA",
+      "description": "Servicio diseñado con arquitectura de microservicios y desplegada en Kubernetes. Ofrece módulos de inscripciones, calificaciones, gestión de sesiones y buscador, integrando API gateways, bases de datos, balanceadores de carga y proxies para asegurar alta escalabilidad, disponibilidad y fácil mantenimiento.",
+      "technologies": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "React JS",
+        "React Native",
+        "Microservicios",
+        "Docker",
+        "Kubernetes",
+        "GCP",
+        "Node.js",
+        "SQLite",
+        "MongoDB"
+      ]
+    },
+    "postmasterUN": {
+      "name": "Postmaster UN",
+      "description": "Aplicación web para la Universidad Nacional de Colombia para dar acceso a la comunidad de forma organizada a información relevante como noticias, eventos y otros"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "formNotAvailable": "El formulario de contacto no está disponible en este momento. Por favor, contactáctame a través de:",
+    "emailLink": "juancmora@proton.me",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+    "yourName": "Tu nombre",
+    "yourEmail": "Tu correo electrónico",
+    "yourMessage": "Tu mensaje",
+    "sending": "Enviando...",
+    "sendMessage": "Enviar Mensaje",
+    "messageSent": "¡Mensaje Enviado!",
+    "thanks": "Gracias",
+    "forContacting": "por contactarme",
+    "willReply": "Responderé",
+    "asSoonAsPossible": "lo antes posible",
+    "back": "Volver",
+    "letsConnect": "Conectemos",
+    "doYouHave": "¿Tienes un",
+    "interestingProject": "proyecto interesante",
+    "or": "o una",
+    "jobOpportunity": "oportunidad laboral",
+    "wouldLoveToHear": "Me encantaría saber más al respecto!",
+    "canContactMe": "Puedes contactarme a través de mis",
+    "socialProfiles": "perfiles sociales",
+    "readyToCollaborate": "Listo para Colaborar",
+    "imOpenTo": "Estoy abierto a oportunidades de",
+    "remoteWork": "trabajo remoto",
+    "projectCollaborations": "colaboraciones en proyectos",
+    "and": "y servicios de",
+    "technicalConsulting": "consultoría técnica",
+    "myFocus": "Mi enfoque combina una visión estratégica con sólidas habilidades técnicas, garantizando resultados sostenibles y alineados con los objetivos del proyecto.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "portfolio": "Portafolio"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "portfolio": "Portafolio"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español"
+  },
+  "theme": {
+    "toggle": "Cambiar tema"
+  }
+}

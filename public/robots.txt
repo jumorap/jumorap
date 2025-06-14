@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Permitir rastreo de todas las páginas importantes
+Allow: /
+
+# Sitemap
+Sitemap: https://jumorap-dev.web.app/sitemap.xml
+
+# Optimizar la tasa de rastreo
+Crawl-delay: 1

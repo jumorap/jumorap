@@ -1,0 +1,243 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Software Engineer",
+    "cta": "Get in touch",
+    "leading": "Leading",
+    "that": "efficient solutions that",
+    "connect": "connect",
+    "systems": "systems of",
+    "highImpact": "high impact"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Systems and Computing Engineer with over 5 years of experience in software development and architecture, specialized in backend solutions, cloud system deployment, and automation. I have led fullstack projects using modern tools with a focus on performance, infrastructure as code, and high availability. I stand out for my leadership skills and passion for continuous improvement in designing efficient solutions that optimize communication between system components and ensure high software quality. I am looking for new challenges that strengthen my technical capabilities and allow me to lead innovative and high-impact projects.",
+    "architecture": "Architecture",
+    "architectureExperience": "Experience in",
+    "designAndDevelopment": "design and development",
+    "scalableArchitectures": "of scalable architectures for web and mobile applications, implementing",
+    "designPatterns": "design patterns",
+    "bestPractices": "and best practices.",
+    "automation": "Automation",
+    "implementationOf": "Implementation of",
+    "automatedWorkflows": "automated workflows",
+    "forCiCd": "for CI/CD, testing, and deployment, improving",
+    "efficiency": "efficiency",
+    "reducingErrors": "and reducing errors in the development process.",
+    "highAvailability": "High Availability",
+    "designOf": "Design of",
+    "robustSystems": "robust systems",
+    "withHighAvailability": "with high availability and fault tolerance, ensuring",
+    "serviceContinuity": "service continuity",
+    "inCriticalEnvironments": "in critical environments.",
+    "softSkills": "Soft Skills",
+    "clearCommunication": "Clear communication",
+    "empathy": "empathy",
+    "leadership": "leadership",
+    "teamwork": "teamwork",
+    "adaptability": "adaptability",
+    "creativityAndProblemSolving": "creativity and problem solving"
+  },
+  "skills": {
+    "title": "Skills",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks",
+    "databases": "Databases",
+    "devops": "DevOps",
+    "cloud": "Cloud",
+    "others": "Others"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "technologies": "Technologies",
+    "astraty": {
+      "institution": "Astraty SAS",
+      "link": "https://astraty.com",
+      "role": "CEO",
+      "period": "May 2025 - Present",
+      "description": "CEO at Astraty SAS, a leading company in software development and technology consulting. Experience in designing and developing web and mobile applications, including software architecture, process automation, cloud deployment, and project management.",
+      "technologies": [
+        "Technical leadership",
+        "Software architecture",
+        "Software development",
+        "Process automation",
+        "Project management",
+        "Cloud infrastructure",
+        "Requirements analysis",
+        "Technology consulting",
+        "Business strategy",
+        "Scrum",
+        "Agile",
+        "Effective communication",
+        "Client negotiation",
+        "Strategic planning",
+        "Team management",
+        "Technical decision-making",
+        "Scalable solution design"
+      ]
+    },
+    "lab101": {
+      "institution": "LAB101 UNAL (Laboratorio de innovación, creatividad y nuevas tecnologías)",
+      "link": "https://web.unal.edu.co/lab101",
+      "role": "Backend Developer",
+      "period": "Jun 2022 - May 2025",
+      "description": "Backend developer, system administrator, and backend team lead for building systems at the National University of Colombia. Experience in designing and developing web and mobile applications, including software architecture, process automation, cloud deployment, and project management."
+    },
+    "freelance": {
+      "institution": "Freelance",
+      "link": "#",
+      "role": "Fullstack Developer",
+      "period": "Nov 2020 - Feb 2022",
+      "description": "Fullstack developer and consultant specialized in designing and implementing custom software solutions, integrating systems, optimizing processes, and creating efficient digital experiences for clients across various industries. Delivered training sessions and provided consulting for the adoption of DevOps tools and software development best practices."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "gpa": "GPA",
+    "unal": {
+      "key": "unal-ing-sys",
+      "institution": "National University of Colombia",
+      "degree": "Systems and Computing Engineering",
+      "period": "Jan 2019 - Oct 2024",
+      "description": "GPA: 4.3/5.0. Solid training in data structures, object-oriented programming, SQL and NoSQL databases, computation theory, and numerical methods. Advanced knowledge in differential, integral, and multivariable calculus, discrete mathematics, linear algebra, and probability theory. Experience in software design and development applying software architecture and engineering principles and agile methodologies, with a focus on efficient problem-solving and the development of scalable, well-structured systems."
+    },
+    "coursera": {
+      "key": "coursera-ucsd",
+      "institution": "Coursera - University of California San Diego",
+      "degree": "Algorithmic Toolbox",
+      "period": "Dec 2021 - Jan 2022",
+      "description": "Intensive training in computational problem-solving, efficient algorithm design, and code optimization. Practical focus with projects on sorting, searching, divide and conquer, greedy algorithms, and dynamic programming using Python."
+    },
+    "ibm1": {
+      "key": "ibm-cc-data-analysis",
+      "institution": "IBM Cognitive Class",
+      "degree": "Data Analysis with Python",
+      "period": "Apr 2021 - Oct 2021",
+      "description": "Specialization focused on data analysis techniques using Python. The course covers data manipulation and cleaning with pandas and NumPy, as well as descriptive statistics, linear regression, and clustering with scikit-learn. It involves preparing, exploring, and transforming real-world datasets to extract insights and build predictive models. This course strengthens essential skills for roles in data science, business intelligence, and statistical analysis."
+    },
+    "ibm2": {
+      "key": "ibm-cc-data-visualization",
+      "institution": "IBM Cognitive Class",
+      "degree": "Data Visualization with Python",
+      "period": "Apr 2021 - Oct 2021",
+      "description": "Course focused on developing data visualization skills using libraries like Matplotlib, Seaborn, and Folium. It teaches how to effectively represent information through line charts, bar plots, histograms, heatmaps, and geospatial visualizations. Emphasis is placed on visual storytelling and tailoring visuals to different audiences. Ideal for professionals who need to clearly and persuasively communicate data insights."
+    },
+    "ibm3": {
+      "key": "ibm-cc-python-for-data-science",
+      "institution": "IBM Cognitive Class",
+      "degree": "Python for Data Science",
+      "period": "Apr 2021 - Oct 2021",
+      "description": "Introductory course to Python with a data science focus. Covers programming fundamentals such as data types, control structures, functions, file handling, and modules. It dives into essential libraries like Pandas and NumPy for efficient data manipulation and introduces the use of APIs and Jupyter Notebooks as key tools in data analysis workflows. Provides a solid foundation for those pursuing careers in data science or machine learning."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "technologies": "Technologies",
+    "links": "Links",
+    "pscript": {
+      "name": "PScript",
+      "description": "A probabilistic programming language based on Python3 that allows you to define and execute probabilistic models, simplifying the implementation and execution of statistical and probabilistic modeling. Incorporates stochastic data structures, mathematical distributions, and control flow.",
+      "technologies": [
+        "Python",
+        "PLY (Python lex yacc)",
+        "Probabilistic Models",
+        "Probability Distributions",
+        "Statistics",
+        "Stochastic Programming"
+      ]
+    },
+    "redBoard": {
+      "name": "RedBoard",
+      "description": "A web platform designed to facilitate the publication of class notes and academic resources among university students, promoting peer-to-peer academic collaboration and resource sharing. It offers an intuitive interface for uploading, browsing, and downloading materials. Initially developed for students at the National University of Colombia and available to over 54k+ users within the institution."
+    },
+    "freeMailSender": {
+      "name": "Free Mail Sender",
+      "description": "A Strapi plugin that simplifies email sending through the REST API using different providers and allows customizing message content according to specific needs. It also implements an asymmetric key system."
+    },
+    "customDeepPopulate": {
+      "name": "Custom Deep Populate",
+      "description": "A Strapi plugin that simplifies the population of complex content structures through the REST API. It allows defining custom data retrieval depth, removing unwanted fields, and filtering nested fields."
+    },
+    "siaWa": {
+      "name": "SIA-WA",
+      "description": "A service designed with a microservice architecture and deployed on Kubernetes. Offers modules for enrollment, grades, session management, and a search engine. It integrates API gateways, databases, load balancers, and proxies to ensure high scalability, availability, and maintainability.",
+      "technologies": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "React JS",
+        "React Native",
+        "Microservices",
+        "Docker",
+        "Kubernetes",
+        "GCP",
+        "Node.js",
+        "SQLite",
+        "MongoDB"
+      ]
+    },
+    "postmasterUN": {
+      "name": "Postmaster UN",
+      "description": "A web application for the National University of Colombia that provides the community with organized access to relevant institutional content such as news, events, and more."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "formNotAvailable": "The contact form is currently unavailable. Please reach out to me via:",
+    "emailLink": "juancmora@proton.me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again.",
+    "yourName": "Your name",
+    "yourEmail": "Your email",
+    "yourMessage": "Your message",
+    "sending": "Sending...",
+    "sendMessage": "Send Message",
+    "messageSent": "Message Sent!",
+    "thanks": "Thank you",
+    "forContacting": "for contacting me",
+    "willReply": "I will reply",
+    "asSoonAsPossible": "as soon as possible",
+    "back": "Back",
+    "letsConnect": "Let's Connect",
+    "doYouHave": "Do you have an",
+    "interestingProject": "interesting project",
+    "or": "or a",
+    "jobOpportunity": "job opportunity",
+    "wouldLoveToHear": "I would love to hear about it!",
+    "canContactMe": "You can contact me through my",
+    "socialProfiles": "social profiles",
+    "readyToCollaborate": "Ready to Collaborate",
+    "imOpenTo": "I'm open to",
+    "remoteWork": "remote work opportunities",
+    "projectCollaborations": "project collaborations",
+    "and": "and",
+    "technicalConsulting": "technical consulting services",
+    "myFocus": "My approach combines strategic thinking with strong technical expertise, ensuring sustainable results aligned with project goals.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "portfolio": "Portfolio"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "portfolio": "Portfolio"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  }
+}
