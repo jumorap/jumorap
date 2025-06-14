@@ -1,6 +1,6 @@
-# Juan Mora – Backend & Cloud Architect
+# [Juan Mora – Backend & Cloud Architect | Portfolio](https://jumorap-dev.web.app)
 
-[![Live Demo](https://img.shields.io/badge/demo-jumorap--dev.web.app-blue)](https://jumorap-dev.web.app)
+[![Live Demo](https://img.shields.io/badge/portfolio-jumorap--dev.web.app-purple)](https://jumorap-dev.web.app)
 
 Welcome to the professional portfolio of Juan Mora, Systems and Computer Engineer with over 5 years of experience in backend development, scalable architecture design, DevOps, and cloud infrastructure. Passionate about solving complex problems and building robust, efficient, and maintainable software systems.
 

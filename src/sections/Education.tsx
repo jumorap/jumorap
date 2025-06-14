@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 import { BookMarked } from "lucide-react";
 import { AnimatedGradient } from "@/components/ui/animated-gradient";
 import { containerVariants, itemVariants } from "./styles/education";
-import { Decorative } from "@/components/decorative/Decorative";
 import { useTranslation } from "react-i18next";
 import { resume } from "@/data/resume";
 
@@ -80,7 +79,7 @@ export function Education() {
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0">
                   <div className="relative w-16 h-16 rounded-full bg-gradient-to-tr from-primary/30 to-blue-500/30 flex items-center justify-center text-primary border border-white/10 shadow-lg animate-pulse-slow">
-                    <div className="absolute inset-0 rounded-full blur-md bg-primary/20 animate-pulse-glow" />
+                    <div className="absolute inset-0 rounded-full blur-md bg-primary/0 animate-pulse-glow" />
                     <div className="relative z-10">{item.icon}</div>
                   </div>
                 </div>
@@ -102,8 +101,6 @@ export function Education() {
                     {item.degree}
                   </h4>
                   <p className="text-muted-foreground">{item.description}</p>
-                  {/* Decorative blurred circles */}
-                  <Decorative />
                 </div>
               </div>
             </motion.div>

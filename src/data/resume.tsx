@@ -77,7 +77,9 @@ export const resume = (t: TFunction): Resume => ({
     {
       title: t("projects.customDeepPopulate.name"),
       description: t("projects.customDeepPopulate.description"),
-      technologies: ["JavaScript", "Strapi", "Código Abierto"],
+      technologies: t("projects.customDeepPopulate.technologies", {
+        returnObjects: true,
+      }) as string[],
       links: [
         {
           url: "https://github.com/jumorap/custom-deep-populate",
@@ -95,7 +97,9 @@ export const resume = (t: TFunction): Resume => ({
     {
       title: t("projects.freeMailSender.name"),
       description: t("projects.freeMailSender.description"),
-      technologies: ["JavaScript", "Strapi", "Código Abierto"],
+      technologies: t("projects.freeMailSender.technologies", {
+        returnObjects: true,
+      }) as string[],
       links: [
         {
           url: "https://github.com/jumorap/free-mail-sender",

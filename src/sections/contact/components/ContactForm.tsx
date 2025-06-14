@@ -44,7 +44,9 @@ export default function ContactForm({
       </CardHeader>
       <div className="h-0.5 w-16 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-6 rounded-full animate-shimmer" />
       <div className="text-center mb-6">
-        <p className="text-muted-foreground">{t("contact.formNotAvailable")}</p>
+        <p className="text-foreground font-medium">
+          {t("contact.formNotAvailable")}
+        </p>
         <a
           href={`mailto:${t("contact.emailLink")}`}
           className="text-blue-500 hover:underline"
@@ -91,7 +93,7 @@ export default function ContactForm({
           </motion.button>
         </motion.div>
       ) : (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="opacity-60 cursor-not-allowed">
           <motion.div
             className="space-y-4"
             variants={containerVariants}
@@ -117,7 +119,8 @@ export default function ContactForm({
                   "after:absolute after:inset-[1px] after:rounded-md after:bg-background/80 after:-z-10",
                   "focus:outline-none focus:ring-2 focus:ring-blue-500/30",
                   "placeholder:text-foreground/50",
-                  "transition-all duration-300 hover:shadow-md hover:shadow-blue-500/5",
+                  // "transition-all duration-300 hover:shadow-md hover:shadow-blue-500/5",
+                  "cursor-not-allowed bg-foreground/40",
                 )}
                 placeholder={t("contact.yourName")}
                 disabled
@@ -141,7 +144,8 @@ export default function ContactForm({
                   "after:absolute after:inset-[1px] after:rounded-md after:bg-background/80 after:-z-10",
                   "focus:outline-none focus:ring-2 focus:ring-purple-500/30",
                   "placeholder:text-foreground/50",
-                  "transition-all duration-300 hover:shadow-md hover:shadow-purple-500/5",
+                  "cursor-not-allowed bg-foreground/40",
+                  // "transition-all duration-300 hover:shadow-md hover:shadow-purple-500/5"
                 )}
                 placeholder={t("contact.yourEmail")}
                 disabled
@@ -167,8 +171,9 @@ export default function ContactForm({
                   "border-0 before:absolute before:inset-0 before:rounded-md before:p-[1px] before:bg-gradient-to-r before:from-pink-500/30 before:via-blue-500/30 before:to-purple-500/30 before:-z-10",
                   "after:absolute after:inset-[1px] after:rounded-md after:bg-background/80 after:-z-10",
                   "focus:outline-none focus:ring-2 focus:ring-pink-500/30",
-                  "placeholder:text-foreground/50",
-                  "transition-all duration-300 hover:shadow-md hover:shadow-pink-500/5 resize-none",
+                  "placeholder:text-foreground/50 resize-none",
+                  "cursor-not-allowed bg-foreground/40",
+                  // "transition-all duration-300 hover:shadow-md hover:shadow-pink-500/5"
                 )}
                 placeholder={t("contact.yourMessage")}
                 disabled
@@ -181,8 +186,9 @@ export default function ContactForm({
                 className={cn(
                   "w-full px-6 py-3 rounded-md",
                   "bg-gradient-to-r from-blue-600 to-purple-600 text-white",
-                  "shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 hover:shadow-xl",
-                  "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+                  "cursor-not-allowed",
+                  // "shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 hover:shadow-xl",
+                  // "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
                   "flex items-center justify-center gap-2 relative overflow-hidden",
                   isSubmitting && "opacity-70 cursor-not-allowed",
                 )}

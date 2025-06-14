@@ -161,11 +161,13 @@
     },
     "freeMailSender": {
       "name": "Free Mail Sender",
-      "description": "A Strapi plugin that simplifies email sending through the REST API using different providers and allows customizing message content according to specific needs. It also implements an asymmetric key system."
+      "description": "A Strapi plugin that simplifies email sending through the REST API using different providers and allows customizing message content according to specific needs. It also implements an asymmetric key system.",
+      "technologies": ["JavaScript", "Strapi", "Open Source"]
     },
     "customDeepPopulate": {
       "name": "Custom Deep Populate",
-      "description": "A Strapi plugin that simplifies the population of complex content structures through the REST API. It allows defining custom data retrieval depth, removing unwanted fields, and filtering nested fields."
+      "description": "A Strapi plugin that simplifies the population of complex content structures through the REST API. It allows defining custom data retrieval depth, removing unwanted fields, and filtering nested fields.",
+      "technologies": ["JavaScript", "Strapi", "Open Source"]
     },
     "siaWa": {
       "name": "SIA-WA",
@@ -199,9 +201,9 @@
     "message": "Message",
     "success": "Message sent successfully!",
     "error": "Error sending message. Please try again.",
-    "yourName": "Your name",
-    "yourEmail": "Your email",
-    "yourMessage": "Your message",
+    "yourName": "NOT available",
+    "yourEmail": "NOT available",
+    "yourMessage": "NOT available",
     "sending": "Sending...",
     "sendMessage": "Send Message",
     "messageSent": "Message Sent!",

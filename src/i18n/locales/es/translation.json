@@ -161,11 +161,13 @@
     },
     "freeMailSender": {
       "name": "Free Mail Sender",
-      "description": "Plugin para Strapi que simplifica el envío de correos electrónicos a través de la API REST utilizando distintos proveedores y personalizar el contenido del mensaje según las necesidades específicas. Además hace uso de un sistema de llaves asimétricas"
+      "description": "Plugin para Strapi que simplifica el envío de correos electrónicos a través de la API REST utilizando distintos proveedores y personalizar el contenido del mensaje según las necesidades específicas. Además hace uso de un sistema de llaves asimétricas",
+      "technologies": ["JavaScript", "Strapi", "Código Abierto"]
     },
     "customDeepPopulate": {
       "name": "Custom Deep Populate",
-      "description": "Plugin para Strapi que simplifica la población de estructuras de contenido complejas a través de la API REST. Permitiendo definir una profundidad personalizada para la obtención de datos, eliminar campos no deseados y filtrar campos anidados."
+      "description": "Plugin para Strapi que simplifica la población de estructuras de contenido complejas a través de la API REST. Permitiendo definir una profundidad personalizada para la obtención de datos, eliminar campos no deseados y filtrar campos anidados.",
+      "technologies": ["JavaScript", "Strapi", "Código Abierto"]
     },
     "siaWa": {
       "name": "SIA-WA",
@@ -199,9 +201,9 @@
     "message": "Mensaje",
     "success": "¡Mensaje enviado con éxito!",
     "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
-    "yourName": "Tu nombre",
-    "yourEmail": "Tu correo electrónico",
-    "yourMessage": "Tu mensaje",
+    "yourName": "NO disponible",
+    "yourEmail": "NO disponible",
+    "yourMessage": "NO disponible",
     "sending": "Enviando...",
     "sendMessage": "Enviar Mensaje",
     "messageSent": "¡Mensaje Enviado!",

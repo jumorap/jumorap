@@ -155,13 +155,17 @@ export function Layout({ children }: LayoutProps) {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.5 }}
               className="md:hidden bg-background/95 backdrop-blur-lg border-t border-border/50"
             >
               <div className="container max-w-7xl mx-auto px-4 py-4">
                 <nav className="flex flex-col space-y-1">
-                  {navItems.map((item) => (
-                    <a
+                  {navItems.map((item, i) => (
+                    <motion.a
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.1, duration: 0.5 }}
                       key={item.label}
                       href={item.href}
                       className={cn(
@@ -171,7 +175,7 @@ export function Layout({ children }: LayoutProps) {
                       onClick={(e) => handleNavClick(e, item.href)}
                     >
                       {item.label}
-                    </a>
+                    </motion.a>
                   ))}
                 </nav>
               </div>
