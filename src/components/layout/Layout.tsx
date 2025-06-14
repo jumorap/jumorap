@@ -7,6 +7,7 @@ import { Menu, X, ChevronUp } from "lucide-react";
 import { ParticlesBackground } from "@/components/ui/particles-background";
 import { useTheme } from "@/components/theme-provider";
 import { useTranslation } from "react-i18next";
+import type { TFunction } from "i18next";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -17,7 +18,7 @@ type NavItem = {
   href: string;
 };
 
-const getNavItems = (t: any): NavItem[] => [
+const getNavItems = (t: TFunction): NavItem[] => [
   { label: t("nav.home"), href: "#" },
   { label: t("nav.about"), href: "#about" },
   { label: t("nav.skills"), href: "#skills" },
@@ -46,9 +47,29 @@ export function Layout({ children }: LayoutProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Cerrar menú móvil al hacer clic en un enlace
-  const handleNavClick = () => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
     setMobileMenuOpen(false);
+
+    setTimeout(() => {
+      const element =
+        href === "#" ? document.body : document.querySelector(href);
+      if (element) {
+        // Calcular la posición del elemento
+        const headerHeight = 40; // Altura aproximada del header
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+
+        // Desplazarse a la posición con offset para el header
+        window.scrollTo({
+          top: elementPosition - headerHeight,
+          behavior: "smooth",
+        });
+      }
+    }, 300);
   };
 
   // Scroll to top
@@ -99,7 +120,7 @@ export function Layout({ children }: LayoutProps) {
                   "px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200",
                   "hover:bg-primary/10 hover:text-primary",
                 )}
-                onClick={handleNavClick}
+                onClick={(e) => handleNavClick(e, item.href)}
               >
                 {item.label}
               </a>
@@ -147,7 +168,7 @@ export function Layout({ children }: LayoutProps) {
                         "px-4 py-3 rounded-md text-sm font-medium transition-colors duration-200",
                         "hover:bg-primary/10 hover:text-primary",
                       )}
-                      onClick={handleNavClick}
+                      onClick={(e) => handleNavClick(e, item.href)}
                     >
                       {item.label}
                     </a>
@@ -212,12 +233,12 @@ export function Layout({ children }: LayoutProps) {
             onClick={scrollToTop}
             className={cn(
               "fixed bottom-6 right-6 p-3 rounded-full z-40",
-              "bg-primary text-primary-foreground shadow-lg",
+              "bg-primary shadow-lg",
               "hover:bg-primary/90 transition-colors duration-200",
             )}
             aria-label="Scroll to top"
           >
-            <ChevronUp size={20} />
+            <ChevronUp size={20} className="text-white" />
           </motion.button>
         )}
       </AnimatePresence>

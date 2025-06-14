@@ -60,6 +60,19 @@ export function Hero() {
         >
           <a
             href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector("#contact");
+              if (element) {
+                const headerHeight = 40; // Altura aproximada del header
+                const elementPosition =
+                  element.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                  top: elementPosition - headerHeight,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className={cn(
               "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md",
               "bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg",
@@ -71,6 +84,19 @@ export function Hero() {
           </a>
           <a
             href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector("#projects");
+              if (element) {
+                const headerHeight = 80; // Altura aproximada del header
+                const elementPosition =
+                  element.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                  top: elementPosition - headerHeight,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className={cn(
               "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md",
               "glass-card text-foreground shadow-md",

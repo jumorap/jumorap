@@ -90,7 +90,7 @@
       "link": "https://web.unal.edu.co/lab101",
       "role": "Backend Developer",
       "period": "Jun 2022 - May 2025",
-      "description": "Backend developer, system administrator, and backend team lead for building systems at the National University of Colombia. Experience in designing and developing web and mobile applications, including software architecture, process automation, cloud deployment, and project management."
+      "description": "Backend developer, system administrator, and backend team lead for building systems at the Universidad Nacional De Colombia. Experience in designing and developing web and mobile applications, including software architecture, process automation, cloud deployment, and project management."
     },
     "freelance": {
       "institution": "Freelance",
@@ -105,7 +105,7 @@
     "gpa": "GPA",
     "unal": {
       "key": "unal-ing-sys",
-      "institution": "National University of Colombia",
+      "institution": "Universidad Nacional De Colombia",
       "degree": "Systems and Computing Engineering",
       "period": "Jan 2019 - Oct 2024",
       "description": "GPA: 4.3/5.0. Solid training in data structures, object-oriented programming, SQL and NoSQL databases, computation theory, and numerical methods. Advanced knowledge in differential, integral, and multivariable calculus, discrete mathematics, linear algebra, and probability theory. Experience in software design and development applying software architecture and engineering principles and agile methodologies, with a focus on efficient problem-solving and the development of scalable, well-structured systems."
@@ -157,7 +157,7 @@
     },
     "redBoard": {
       "name": "RedBoard",
-      "description": "A web platform designed to facilitate the publication of class notes and academic resources among university students, promoting peer-to-peer academic collaboration and resource sharing. It offers an intuitive interface for uploading, browsing, and downloading materials. Initially developed for students at the National University of Colombia and available to over 54k+ users within the institution."
+      "description": "A web platform designed to facilitate the publication of class notes and academic resources among university students, promoting peer-to-peer academic collaboration and resource sharing. It offers an intuitive interface for uploading, browsing, and downloading materials. Initially developed for students at the Universidad Nacional De Colombia and available to over 54k+ users within the institution."
     },
     "freeMailSender": {
       "name": "Free Mail Sender",
@@ -187,7 +187,7 @@
     },
     "postmasterUN": {
       "name": "Postmaster UN",
-      "description": "A web application for the National University of Colombia that provides the community with organized access to relevant institutional content such as news, events, and more."
+      "description": "A web application for the Universidad Nacional De Colombia that provides the community with organized access to relevant institutional content such as news, events, and more."
     }
   },
   "contact": {
