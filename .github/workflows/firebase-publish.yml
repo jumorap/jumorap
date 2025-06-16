@@ -22,6 +22,18 @@ jobs:
       - name: Install Dependencies
         run: bun install --frozen-lockfile
 
+      - name: Print Environment Variables for Debugging
+        run: |
+          echo "VITE_EMAILJS_SERVICE_ID: ${{ env.VITE_EMAILJS_SERVICE_ID }}"
+          echo "VITE_EMAILJS_TEMPLATE_ID: ${{ env.VITE_EMAILJS_TEMPLATE_ID }}"
+          echo "VITE_EMAILJS_PUBLIC_KEY: ${{ env.VITE_EMAILJS_PUBLIC_KEY }}"
+          # Also check if they are directly in process.env within a node script if applicable
+          # node -e 'console.log(process.env.VITE_EMAILJS_SERVICE_ID)'
+        env:
+          VITE_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+          VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
+
       - name: Build
         run: bun run build
         env:
