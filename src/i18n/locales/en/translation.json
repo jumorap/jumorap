@@ -201,9 +201,9 @@
     "message": "Message",
     "success": "Message sent successfully!",
     "error": "Error sending message. Please try again.",
-    "yourName": "NOT available",
-    "yourEmail": "NOT available",
-    "yourMessage": "NOT available",
+    "yourName": "Your name",
+    "yourEmail": "Your email",
+    "yourMessage": "Your message",
     "sending": "Sending...",
     "sendMessage": "Send Message",
     "messageSent": "Message Sent!",
@@ -229,7 +229,8 @@
     "myFocus": "My approach combines strategic thinking with strong technical expertise, ensuring sustainable results aligned with project goals.",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "alreadySent": "You have already sent a message, I will get back to you as soon as possible! Thank you for your interest."
   },
   "footer": {
     "rights": "All rights reserved.",

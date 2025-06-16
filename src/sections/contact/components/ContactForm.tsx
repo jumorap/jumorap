@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Send, Mail, CheckCircle, ArrowRight } from "lucide-react";
+import { Send, Mail, CheckCircle, AlertCircle } from "lucide-react";
 import { containerVariants, itemVariants } from "../contact.styles";
 import CardHeader from "./CardHeader";
 import type { contactForm } from "../contact.types";
@@ -12,7 +12,11 @@ export default function ContactForm({
   handleSubmit,
   isSubmitting,
   isSubmitted,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   setIsSubmitted,
+  error,
+  formRef,
+  successMessage,
 }: contactForm) {
   return (
     <motion.div
@@ -43,17 +47,6 @@ export default function ContactForm({
         {t("contact.sendMessage")}
       </CardHeader>
       <div className="h-0.5 w-16 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-6 rounded-full animate-shimmer" />
-      <div className="text-center mb-6">
-        <p className="text-foreground font-medium">
-          {t("contact.formNotAvailable")}
-        </p>
-        <a
-          href={`mailto:${t("contact.emailLink")}`}
-          className="text-blue-500 hover:underline"
-        >
-          {t("contact.emailLink")}
-        </a>
-      </div>
       {isSubmitted ? (
         <motion.div
           className="flex flex-col items-center justify-center py-8 text-center"
@@ -69,31 +62,32 @@ export default function ContactForm({
             {t("contact.messageSent")}
           </h4>
           <p className="text-muted-foreground mb-6">
-            <span className="text-foreground">{t("contact.thanks")}</span>{" "}
-            {t("contact.forContacting")}. {t("contact.willReply")}{" "}
-            <span className="text-blue-500 dark:text-blue-400">
-              {t("contact.asSoonAsPossible")}
-            </span>
-            .
-          </p>
-          <motion.button
-            className={cn(
-              "px-6 py-2 rounded-md",
-              "bg-gradient-to-r from-blue-600 to-green-600 text-white shadow-lg",
-              "hover:shadow-blue-500/30 hover:shadow-xl",
-              "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
-              "flex items-center justify-center gap-2",
+            {successMessage || (
+              <>
+                <span className="text-foreground">{t("contact.thanks")}</span>{" "}
+                {t("contact.forContacting")}. {t("contact.willReply")}{" "}
+                <span className="text-blue-500 dark:text-blue-400">
+                  {t("contact.asSoonAsPossible")}
+                </span>
+                .
+              </>
             )}
-            onClick={() => setIsSubmitted(false)}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <ArrowRight className="h-4 w-4" />
-            {t("contact.back")}
-          </motion.button>
+          </p>
         </motion.div>
       ) : (
-        <form onSubmit={handleSubmit} className="opacity-60 cursor-not-allowed">
+        <form
+          ref={formRef}
+          onSubmit={(e) => {
+            console.log("Form submitted");
+            handleSubmit(e);
+          }}
+        >
+          {error && (
+            <div className="mb-4 p-3 bg-red-500/10 border border-red-500/20 rounded-md flex items-center gap-2 text-red-500">
+              <AlertCircle className="h-5 w-5" />
+              <span>{error}</span>
+            </div>
+          )}
           <motion.div
             className="space-y-4"
             variants={containerVariants}
@@ -119,11 +113,9 @@ export default function ContactForm({
                   "after:absolute after:inset-[1px] after:rounded-md after:bg-background/80 after:-z-10",
                   "focus:outline-none focus:ring-2 focus:ring-blue-500/30",
                   "placeholder:text-foreground/50",
-                  // "transition-all duration-300 hover:shadow-md hover:shadow-blue-500/5",
-                  "cursor-not-allowed bg-foreground/40",
+                  "transition-all duration-300 hover:shadow-md hover:shadow-blue-500/5",
                 )}
                 placeholder={t("contact.yourName")}
-                disabled
               />
             </motion.div>
             <motion.div variants={itemVariants}>
@@ -144,11 +136,9 @@ export default function ContactForm({
                   "after:absolute after:inset-[1px] after:rounded-md after:bg-background/80 after:-z-10",
                   "focus:outline-none focus:ring-2 focus:ring-purple-500/30",
                   "placeholder:text-foreground/50",
-                  "cursor-not-allowed bg-foreground/40",
-                  // "transition-all duration-300 hover:shadow-md hover:shadow-purple-500/5"
+                  "transition-all duration-300 hover:shadow-md hover:shadow-purple-500/5",
                 )}
                 placeholder={t("contact.yourEmail")}
-                disabled
               />
             </motion.div>
             <motion.div variants={itemVariants}>
@@ -166,32 +156,29 @@ export default function ContactForm({
                 required
                 rows={5}
                 className={cn(
-                  "w-full px-4 py-2 rounded-md h-20",
+                  "w-full px-4 py-2 rounded-md h-32",
                   "glass-card relative backdrop-blur-sm",
                   "border-0 before:absolute before:inset-0 before:rounded-md before:p-[1px] before:bg-gradient-to-r before:from-pink-500/30 before:via-blue-500/30 before:to-purple-500/30 before:-z-10",
                   "after:absolute after:inset-[1px] after:rounded-md after:bg-background/80 after:-z-10",
                   "focus:outline-none focus:ring-2 focus:ring-pink-500/30",
                   "placeholder:text-foreground/50 resize-none",
-                  "cursor-not-allowed bg-foreground/40",
-                  // "transition-all duration-300 hover:shadow-md hover:shadow-pink-500/5"
+                  "transition-all duration-300 hover:shadow-md hover:shadow-pink-500/5",
                 )}
                 placeholder={t("contact.yourMessage")}
-                disabled
               />
             </motion.div>
             <motion.div variants={itemVariants}>
               <button
                 type="submit"
-                disabled
                 className={cn(
                   "w-full px-6 py-3 rounded-md",
                   "bg-gradient-to-r from-blue-600 to-purple-600 text-white",
-                  "cursor-not-allowed",
-                  // "shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 hover:shadow-xl",
-                  // "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+                  "shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 hover:shadow-xl",
+                  "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
                   "flex items-center justify-center gap-2 relative overflow-hidden",
                   isSubmitting && "opacity-70 cursor-not-allowed",
                 )}
+                disabled={isSubmitting}
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left" />
                 {isSubmitting ? (

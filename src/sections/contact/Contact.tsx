@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Globe, Mail, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 import { resume } from "@/data/resume";
+import Cookies from "js-cookie";
 import {
   ContactForm,
   DecorativeBackground,
@@ -11,9 +13,14 @@ import {
   SectionHeader,
 } from "./components";
 
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+emailjs.init(PUBLIC_KEY);
+
 export function Contact() {
   const { t } = useTranslation();
-
   const socialLinks = resume(t).socialLinks;
   const [formState, setFormState] = useState({
     name: "",
@@ -22,22 +29,90 @@ export function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [hasRecentlySent, setHasRecentlySent] = useState(false);
+
+  useEffect(() => {
+    const emailSentCookie = Cookies.get("emailSent");
+    if (emailSentCookie) {
+      setHasRecentlySent(true);
+      setIsSubmitted(true);
+    }
+  }, []);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormState((prev) => ({ ...prev, [name]: value }));
   };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+    console.log("handleSubmit called");
+
+    if (hasRecentlySent) {
       setIsSubmitted(true);
-      setFormState({ name: "", email: "", message: "" });
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 1500);
+      return;
+    }
+
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const templateParams = {
+        name: formState.name,
+        email: formState.email,
+        message: formState.message,
+        from_email: formState.email,
+        reply_to: formState.email,
+      };
+
+      console.log("Sending email with params:", templateParams);
+      console.log("Using SERVICE_ID:", SERVICE_ID);
+      console.log("Using TEMPLATE_ID:", TEMPLATE_ID);
+
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, templateParams)
+        .then((result) => {
+          console.log("Email sent successfully:", result.text);
+          setIsSubmitting(false);
+          setIsSubmitted(true);
+          setHasRecentlySent(true);
+          setFormState({ name: "", email: "", message: "" });
+
+          Cookies.set("emailSent", "true", { expires: 1 }); // 1 day
+        })
+        .catch((error) => {
+          console.error("Error sending email:", error);
+          setIsSubmitting(false);
+          setError(t("contact.error"));
+        });
+    } catch (error) {
+      console.error("Exception in email sending:", error);
+      setIsSubmitting(false);
+      setError(t("contact.error"));
+    }
   };
+
+  let successMessage: React.ReactNode = null;
+  if (hasRecentlySent) {
+    successMessage = (
+      <>
+        <span className="text-foreground">{t("contact.thanks")}</span>{" "}
+        {t("contact.forContacting")}. {t("contact.willReply")}{" "}
+        <span className="text-blue-500 dark:text-blue-400">
+          {t("contact.asSoonAsPossible")}
+        </span>
+        .
+        <br />
+        <span className="text-amber-500 mt-8 block text-lg">
+          {t("contact.alreadySent")}
+        </span>
+      </>
+    );
+  }
+
   return (
     <section id="contact" className="py-10 px-4 relative overflow-hidden">
       <DecorativeBackground />
@@ -61,6 +136,9 @@ export function Contact() {
             isSubmitting={isSubmitting}
             isSubmitted={isSubmitted}
             setIsSubmitted={setIsSubmitted}
+            error={error}
+            hasRecentlySent={hasRecentlySent}
+            successMessage={successMessage}
           />
           <motion.div
             className="flex flex-col justify-between"

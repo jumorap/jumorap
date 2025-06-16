@@ -1,4 +1,5 @@
 import type { TFunction } from "i18next";
+import type { RefObject } from "react";
 
 export type contactForm = {
   t: TFunction;
@@ -14,6 +15,10 @@ export type contactForm = {
   isSubmitting: boolean;
   isSubmitted: boolean;
   setIsSubmitted: (isSubmitted: boolean) => void;
+  error?: string | null;
+  formRef?: RefObject<HTMLFormElement>;
+  hasRecentlySent?: boolean;
+  successMessage?: React.ReactNode;
 };
 
 export type cardHeader = {

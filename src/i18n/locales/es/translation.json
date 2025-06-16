@@ -201,9 +201,9 @@
     "message": "Mensaje",
     "success": "¡Mensaje enviado con éxito!",
     "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
-    "yourName": "NO disponible",
-    "yourEmail": "NO disponible",
-    "yourMessage": "NO disponible",
+    "yourName": "Tu nombre",
+    "yourEmail": "Tu correo electrónico",
+    "yourMessage": "Tu mensaje",
     "sending": "Enviando...",
     "sendMessage": "Enviar Mensaje",
     "messageSent": "¡Mensaje Enviado!",
@@ -229,7 +229,8 @@
     "myFocus": "Mi enfoque combina una visión estratégica con sólidas habilidades técnicas, garantizando resultados sostenibles y alineados con los objetivos del proyecto.",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "portfolio": "Portafolio"
+    "portfolio": "Portafolio",
+    "alreadySent": "Ya has enviado un mensaje. ¡Te responderé lo antes posible! Gracias por tu interés"
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
