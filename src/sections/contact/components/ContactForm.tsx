@@ -12,8 +12,7 @@ export default function ContactForm({
   handleSubmit,
   isSubmitting,
   isSubmitted,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  setIsSubmitted,
+  //  setIsSubmitted,
   error,
   formRef,
   successMessage,
