@@ -5,7 +5,7 @@ Allow: /
 Allow: /
 
 # Sitemap
-Sitemap: https://jumorap-dev.web.app/sitemap.xml
+Sitemap: https://jumorap.astraty.com/sitemap.xml
 
 # Optimizar la tasa de rastreo
 Crawl-delay: 1

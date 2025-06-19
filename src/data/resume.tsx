@@ -146,7 +146,7 @@ export const resume = (t: TFunction): Resume => ({
       icon: <Linkedin className="h-5 w-5" />,
     },
     {
-      url: "https://jumorap-dev.web.app",
+      url: "https://jumorap.astraty.com",
       label: t("contact.portfolio"),
       icon: <Globe className="h-5 w-5" />,
     },

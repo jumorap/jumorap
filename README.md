@@ -1,6 +1,6 @@
-# [Juan Mora – Backend & Cloud Architect | Portfolio](https://jumorap-dev.web.app)
+# [Juan Mora – Backend & Cloud Architect | Portfolio](https://jumorap.astraty.com)
 
-[![Live Demo](https://img.shields.io/badge/portfolio-jumorap--dev.web.app-purple)](https://jumorap-dev.web.app)
+[![Live Demo](https://img.shields.io/badge/portfolio-jumorap.astraty.com-purple)](https://jumorap.astraty.com)
 
 Welcome to the professional portfolio of Juan Mora, Systems and Computer Engineer with over 5 years of experience in backend development, scalable architecture design, DevOps, and cloud infrastructure. Passionate about solving complex problems and building robust, efficient, and maintainable software systems.
 
@@ -25,7 +25,7 @@ Welcome to the professional portfolio of Juan Mora, Systems and Computer Enginee
 
 ## 🌐 Contact
 
-- 🌐 Portfolio: [jumorap-dev.web.app](https://jumorap-dev.web.app)
+- 🌐 Portfolio: [jumorap.astraty.com](https://jumorap.astraty.com)
 - 💼 LinkedIn: [linkedin.com/in/jumorap](https://www.linkedin.com/in/jumorap)
 - 💻 GitHub: [github.com/jumorap](https://github.com/jumorap)
 - 📧 Email: [juancmora@proton.me](mailto:juancmora@proton.me)

@@ -193,7 +193,8 @@ export function Layout({ children }: LayoutProps) {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} Juan Mora. {t("footer.rights")}
+                © {new Date().getFullYear()} Jumorap | Juan Mora.{" "}
+                {t("footer.rights")}
               </p>
             </div>
             <div className="flex space-x-4">
@@ -214,7 +215,7 @@ export function Layout({ children }: LayoutProps) {
                 LinkedIn
               </a>
               <a
-                href="https://jumorap-dev.web.app"
+                href="https://jumorap.astraty.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
