@@ -9,10 +9,8 @@ export function useThemeEffect() {
   const { theme } = useTheme();
 
   useEffect(() => {
-    // Añadir una clase al body para animaciones de transición
     document.body.classList.add("theme-transition");
 
-    // Aplicar efectos específicos según el tema
     if (
       theme === "dark" ||
       (theme === "system" &&
@@ -29,7 +27,6 @@ export function useThemeEffect() {
       );
     }
 
-    // Limpiar la clase después de la transición
     const timer = setTimeout(() => {
       document.body.classList.remove("theme-transition");
     }, 300);

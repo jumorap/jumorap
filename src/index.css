@@ -59,9 +59,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings:
-      "rlig" 1,
-      "calt" 1;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
   html {
     scroll-behavior: smooth;
@@ -89,8 +87,7 @@
     background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
     background-size: 300% 300%;
     animation: gradient-border-animation 8s ease infinite;
-    -webkit-mask:
-      linear-gradient(#fff 0 0) content-box,
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -143,9 +140,7 @@
 
   .glass-card {
     @apply bg-background/20 backdrop-blur-xl border border-white/20 dark:border-white/10 rounded-xl;
-    box-shadow:
-      0 10px 30px rgba(0, 0, 0, 0.15),
-      0 1px 3px rgba(0, 0, 0, 0.1),
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1),
       0 0 0 1px rgba(255, 255, 255, 0.05) inset;
     transition: all 0.3s ease;
     position: relative;
@@ -154,9 +149,7 @@
 
   .glass-card:hover {
     transform: translateY(-5px);
-    box-shadow:
-      0 15px 35px rgba(0, 0, 0, 0.2),
-      0 1px 3px rgba(0, 0, 0, 0.1),
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1),
       0 0 0 1px rgba(255, 255, 255, 0.05) inset;
   }
 

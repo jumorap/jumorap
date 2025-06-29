@@ -36,7 +36,6 @@ export function Layout({ children }: LayoutProps) {
   const { t } = useTranslation();
   const navItems = getNavItems(t);
 
-  // Detectar scroll para cambiar estilos del header
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -58,12 +57,10 @@ export function Layout({ children }: LayoutProps) {
       const element =
         href === "#" ? document.body : document.querySelector(href);
       if (element) {
-        // Calcular la posición del elemento
-        const headerHeight = 40; // Altura aproximada del header
+        const headerHeight = 40;
         const elementPosition =
           element.getBoundingClientRect().top + window.scrollY;
 
-        // Desplazarse a la posición con offset para el header
         window.scrollTo({
           top: elementPosition - headerHeight,
           behavior: "smooth",
@@ -77,7 +74,6 @@ export function Layout({ children }: LayoutProps) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // Definir colores de partículas según el tema
   const particleColors =
     theme === "dark"
       ? ["#ffffff", "#88ccff", "#8866ff"]

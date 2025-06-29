@@ -34,14 +34,12 @@ export function ParticlesBackground({
   const mouseRef = useRef({ x: 0, y: 0, radius: 100 });
   const { theme } = useTheme();
 
-  // Ajustar densidad
   const densityMap = {
     low: 0.5,
     medium: 1,
     high: 2,
   };
 
-  // Inicializar partículas
   const initParticles = (canvas: HTMLCanvasElement) => {
     const adjustedQuantity = Math.floor(quantity * densityMap[density]);
     particlesRef.current = [];
@@ -59,7 +57,6 @@ export function ParticlesBackground({
     }
   };
 
-  // Actualizar y dibujar partículas
   const animate = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -70,11 +67,9 @@ export function ParticlesBackground({
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     particlesRef.current.forEach((particle) => {
-      // Actualizar posición
       particle.x += particle.speedX;
       particle.y += particle.speedY;
 
-      // Rebote en los bordes
       if (particle.x > canvas.width || particle.x < 0) {
         particle.speedX = -particle.speedX;
       }
@@ -82,7 +77,6 @@ export function ParticlesBackground({
         particle.speedY = -particle.speedY;
       }
 
-      // Interacción con el mouse
       if (interactive) {
         const dx = particle.x - mouseRef.current.x;
         const dy = particle.y - mouseRef.current.y;
@@ -98,7 +92,6 @@ export function ParticlesBackground({
         }
       }
 
-      // Dibujar partícula
       ctx.beginPath();
       ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
       ctx.fillStyle = particle.color;
@@ -110,7 +103,6 @@ export function ParticlesBackground({
     animationRef.current = requestAnimationFrame(animate);
   };
 
-  // Ajustar tamaño del canvas
   const handleResize = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -121,18 +113,15 @@ export function ParticlesBackground({
     initParticles(canvas);
   };
 
-  // Seguimiento del mouse
   const handleMouseMove = (e: MouseEvent) => {
     mouseRef.current.x = e.clientX;
     mouseRef.current.y = e.clientY;
   };
 
-  // Efecto para inicializar y limpiar
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    // Configurar canvas
     handleResize();
     window.addEventListener("resize", handleResize);
 
@@ -140,10 +129,8 @@ export function ParticlesBackground({
       window.addEventListener("mousemove", handleMouseMove);
     }
 
-    // Iniciar animación
     animate();
 
-    // Limpiar
     return () => {
       cancelAnimationFrame(animationRef.current);
       window.removeEventListener("resize", handleResize);

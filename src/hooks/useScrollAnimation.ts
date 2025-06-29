@@ -25,7 +25,6 @@ export function useScrollAnimation(
         if (entry.isIntersecting) {
           setIsVisible(true);
 
-          // Si once es true, desconectar el observer después de que el elemento sea visible
           if (once && ref.current) {
             observer.unobserve(ref.current);
           }

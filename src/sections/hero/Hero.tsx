@@ -75,7 +75,7 @@ export function Hero() {
               "hover:shadow-blue-500/30 hover:shadow-xl animate-shimmer",
               "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
             )}
-            aria-label="Contact Juan Mora"
+            aria-label="Contact Juan Mora for backend development and cloud architecture services"
           >
             <span className="text-white">{t("hero.cta")}</span>
           </a>
@@ -84,6 +84,56 @@ export function Hero() {
             onClick={(e) => {
               e.preventDefault();
               const element = document.querySelector("#projects");
+              if (element) {
+                const headerHeight = 60;
+                const elementPosition =
+                  element.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                  top: elementPosition - headerHeight,
+                  behavior: "smooth",
+                });
+              }
+            }}
+            className={cn(
+              "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md",
+              "glass-card text-foreground shadow-md",
+              "hover:shadow-purple-500/20 hover:shadow-xl border-purple-500/20",
+              "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+            )}
+            aria-label="View Juan Mora's backend and cloud architecture projects"
+          >
+            {t("nav.projects")}
+          </a>
+          <a
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector("#about");
+              if (element) {
+                const headerHeight = 60;
+                const elementPosition =
+                  element.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                  top: elementPosition - headerHeight,
+                  behavior: "smooth",
+                });
+              }
+            }}
+            className={cn(
+              "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md",
+              "glass-card text-foreground shadow-md",
+              "hover:shadow-blue-500/20 hover:shadow-xl border-blue-500/20",
+              "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+            )}
+            aria-label="Learn about Juan Mora's experience as a backend developer and systems architect"
+          >
+            {t("nav.about")}
+          </a>
+          <a
+            href="#skills"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.querySelector("#skills");
               if (element) {
                 const headerHeight = 80;
                 const elementPosition =
@@ -100,9 +150,9 @@ export function Hero() {
               "hover:shadow-purple-500/20 hover:shadow-xl border-purple-500/20",
               "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
             )}
-            aria-label="View Juan Mora's Projects"
+            aria-label="Explore Juan Mora's backend development and cloud architecture skills"
           >
-            {t("nav.projects")}
+            {t("nav.skills")}
           </a>
         </motion.div>
 

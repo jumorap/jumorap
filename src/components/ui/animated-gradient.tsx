@@ -22,21 +22,18 @@ export function AnimatedGradient({
   const containerRef = useRef<HTMLDivElement>(null);
   const gradientRef = useRef<HTMLDivElement>(null);
 
-  // Configurar intensidad
   const intensityMap = {
     subtle: "opacity-10",
     medium: "opacity-20",
     strong: "opacity-30",
   };
 
-  // Configurar velocidad
   const speedMap = {
     slow: 20,
     medium: 12,
     fast: 8,
   };
 
-  // Efecto de seguimiento del cursor si es interactivo
   useEffect(() => {
     if (!interactive || !containerRef.current || !gradientRef.current) return;
 
@@ -48,11 +45,9 @@ export function AnimatedGradient({
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
 
-      // Calcular posición relativa (0-100%)
       const posX = (x / rect.width) * 100;
       const posY = (y / rect.height) * 100;
 
-      // Aplicar transformación con un ligero retraso para efecto suave
       gradient.style.transform = `translate(-50%, -50%) translate(${posX}%, ${posY}%)`;
     };
 
