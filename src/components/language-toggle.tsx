@@ -21,6 +21,15 @@ export function LanguageToggle() {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
     setCurrentLanguage(lng);
+
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+
+      if (lng === "en") url.searchParams.delete("lang");
+      else url.searchParams.set("lang", lng);
+
+      window.history.pushState({}, "", url.toString());
+    }
   };
 
   return (

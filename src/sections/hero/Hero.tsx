@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Github, Linkedin } from "lucide-react";
 import { AnimatedGradient } from "@/components/ui/animated-gradient";
-import { containerVariants, itemVariants } from "./styles/hero";
+import { containerVariants, itemVariants } from "./hero.styles";
+import { NavLinkGroup } from "./components";
 import { useTranslation } from "react-i18next";
 
 export function Hero() {
@@ -25,22 +26,18 @@ export function Hero() {
         initial="hidden"
         animate="visible"
       >
-        <motion.h1
-          className="text-4xl md:text-6xl font-bold tracking-tight mb-4"
-          variants={itemVariants}
-        >
-          <span className="gradient-text animate-pulse-glow">Juan Mora</span>
-        </motion.h1>
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
+          <span className="gradient-text animate-pulse-glow">
+            Juan Mora - {t("hero.role")}
+          </span>
+        </h1>
 
-        <motion.h2
-          className="text-xl md:text-2xl font-medium mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 dark:from-blue-300 dark:via-purple-300 dark:to-pink-300"
-          variants={itemVariants}
-        >
-          {t("hero.role")}
-        </motion.h2>
+        <h2 className="text-xl md:text-2xl font-medium mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-400 dark:to-purple-400">
+          {t("hero.description")}
+        </h2>
 
         <motion.p
-          className="text-lg md:text-xl max-w-2xl mx-auto mb-10 glass-card p-4 backdrop-blur-md border-blue-500/20 animate-shimmer"
+          className="text-lg md:text-xl max-w-2xl mx-auto mb-6 glass-card p-4 backdrop-blur-md border-blue-500/20 animate-shimmer"
           variants={itemVariants}
         >
           <span className="font-medium">{t("hero.leading")}</span>{" "}
@@ -64,7 +61,7 @@ export function Hero() {
               e.preventDefault();
               const element = document.querySelector("#contact");
               if (element) {
-                const headerHeight = 40; // Altura aproximada del header
+                const headerHeight = 40;
                 const elementPosition =
                   element.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({
@@ -79,6 +76,7 @@ export function Hero() {
               "hover:shadow-blue-500/30 hover:shadow-xl animate-shimmer",
               "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
             )}
+            aria-label="Contact Juan Mora"
           >
             <span className="text-white">{t("hero.cta")}</span>
           </a>
@@ -88,7 +86,7 @@ export function Hero() {
               e.preventDefault();
               const element = document.querySelector("#projects");
               if (element) {
-                const headerHeight = 80; // Altura aproximada del header
+                const headerHeight = 80;
                 const elementPosition =
                   element.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({
@@ -103,9 +101,18 @@ export function Hero() {
               "hover:shadow-purple-500/20 hover:shadow-xl border-purple-500/20",
               "transition-all duration-300 ease-in-out transform hover:-translate-y-1",
             )}
+            aria-label="View Juan Mora's Projects"
           >
             {t("nav.projects")}
           </a>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
+          <NavLinkGroup itemVariants={itemVariants} />
         </motion.div>
 
         <motion.div
@@ -117,20 +124,24 @@ export function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full glass border border-blue-500/20 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300 transform hover:scale-110 hover:rotate-3 animate-pulse-glow"
-            aria-label="GitHub"
+            aria-label="Juan Mora's GitHub Profile"
+            title="Check Juan Mora's open source projects on GitHub"
             style={{ animationDuration: "4s" }}
           >
             <Github size={20} className="text-blue-500" />
+            <span className="sr-only">GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/jumorap"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full glass border border-purple-500/20 hover:border-purple-500/50 hover:bg-purple-500/10 transition-all duration-300 transform hover:scale-110 hover:rotate-3 animate-pulse-glow"
-            aria-label="LinkedIn"
+            aria-label="Juan Mora's LinkedIn Profile"
+            title="Connect with Juan Mora on LinkedIn"
             style={{ animationDuration: "4s", animationDelay: "0.5s" }}
           >
             <Linkedin size={20} className="text-purple-500" />
+            <span className="sr-only">LinkedIn</span>
           </a>
         </motion.div>
       </motion.div>
