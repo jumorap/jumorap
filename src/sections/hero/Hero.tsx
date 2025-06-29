@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 import { Github, Linkedin } from "lucide-react";
 import { AnimatedGradient } from "@/components/ui/animated-gradient";
 import { containerVariants, itemVariants } from "./hero.styles";
-import { NavLinkGroup } from "./components";
 import { useTranslation } from "react-i18next";
 
 export function Hero() {
@@ -107,13 +106,13 @@ export function Hero() {
           </a>
         </motion.div>
 
-        <motion.div
+        {/*<motion.div
           initial="hidden"
           animate="visible"
           variants={containerVariants}
         >
           <NavLinkGroup itemVariants={itemVariants} />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="flex justify-center gap-4"
