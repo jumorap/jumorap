@@ -121,7 +121,7 @@ export function Experience() {
                         </h3>
                       </div>
                       <span className="text-sm px-3 py-1 inline-flex items-center justify-center">
-                        {exp.period}
+                        {/*exp.period*/}
                       </span>
                     </div>
 

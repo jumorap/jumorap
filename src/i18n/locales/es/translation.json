@@ -9,7 +9,7 @@
     "contact": "Contacto"
   },
   "hero": {
-    "role": "Ingeniero de Software",
+    "role": "Aqruitecto de Soluciones",
     "description": "Diseño y desarrollo de arquitecturas escalables y robustas",
     "cta": "Contáctame",
     "leading": "Liderando",
@@ -20,7 +20,7 @@
   },
   "about": {
     "title": "Sobre Mí",
-    "description": "Ingeniero de Sistemas y Computación con más de 5 años de experiencia en desarrollo y arquitectura de software, especializado en soluciones backend, despliegue de sistemas en la nube y automatización. He liderado proyectos fullstack utilizando herramientas modernas con enfoque en rendimiento, infraestructura como código y alta disponibilidad. Me destaco por mis habilidades de liderazgo y pasión por la mejora continua en el diseño de soluciones eficientes que optimizan la comunicación entre componentes del sistema y aseguran la alta calidad del software. Busco nuevos retos que fortalezcan mis capacidades técnicas y me permitan liderar proyectos innovadores y de alto impacto.",
+    "description": "Ingeniero de Sistemas y Computación con más de 7 años de experiencia en desarrollo y arquitectura de software, enfocado en la construcción de servicios backend robustos, escalables y cloud-first. He liderado y co-liderado iniciativas técnicas end-to-end, participando de forma hands-on en diseño de arquitectura, modelado de datos y desarrollo con tecnologías modernas, priorizando rendimiento, alta disponibilidad e infraestructura como código. Cuento con experiencia en sistemas distribuidos, automatización y despliegue en entornos cloud, así como en la definición de patrones reutilizables que fortalecen plataformas críticas. Me caracterizo por un liderazgo técnico sólido, pensamiento sistémico y una fuerte orientación a la calidad y la mejora continua. Busco retos de alto impacto donde pueda aportar en decisiones técnicas estratégicas y en la evolución de soluciones.",
     "architecture": "Arquitectura",
     "architectureExperience": "Experiencia en",
     "designAndDevelopment": "diseño y desarrollo",
@@ -60,6 +60,38 @@
     "title": "Experiencia",
     "present": "Presente",
     "technologies": "Tecnologías",
+    "gtec": {
+      "institution": "GTEC",
+      "link": "https://gtec.com.mx",
+      "role": "Arquitecto de Soluciones",
+      "period": "Mayo 2025 - Presente",
+      "description": "Arquitecto de Soluciones Cloud en GTEC con experiencia práctica en el diseño y liderazgo de arquitecturas escalables para plataformas financieras y de seguros. Especializado en la extensión de módulos financieros core mediante microservicios cloud-native desplegados en Kubernetes, utilizando Anthos para entornos híbridos y multicloud, y Apigee para la gestión segura de APIs e integración de sistemas.",
+      "technologies": [
+        "Liderazgo técnico",
+        "Arquitectura de software",
+        "ApiGee",
+        "Anthos",
+        "Kubernetes",
+        "Microservicios",
+        "Pubsub",
+        "Cloud Functions",
+        "Cloud Run",
+        "Cloud Storage",
+        "Cloud SQL",
+        "Firestore",
+        "Java Spring Boot",
+        "Desarrollo de software",
+        "Automatización de procesos",
+        "Infraestructura cloud",
+        "Análisis de requerimientos",
+        "Consultoría tecnológica",
+        "Estrategia de negocio",
+        "Comunicación efectiva",
+        "Planeación estratégica",
+        "Toma de decisiones técnicas",
+        "Diseño de soluciones escalables"
+      ]
+    },
     "astraty": {
       "institution": "Astraty SAS",
       "link": "https://astraty.com",

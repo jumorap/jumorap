@@ -93,7 +93,7 @@ export function Education() {
                       className="text-sm backdrop-blur-sm px-3 py-1 inline-flex items-center justify-center"
                       whileHover={{ scale: 1.05, y: -2 }}
                     >
-                      {item.period}
+                      {/*item.period*/}
                     </motion.span>
                   </div>
                   <div className="h-0.5 w-20 bg-gradient-to-r from-primary/80 to-blue-500/80 rounded-full mb-3 animate-shimmer" />

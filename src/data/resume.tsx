@@ -195,6 +195,17 @@ export const resume = (t: TFunction): Resume => ({
   ],
   experience: [
     {
+      company: t("experience.gtec.institution"),
+      link: t("experience.gtec.link"),
+      position: t("experience.gtec.role"),
+      period: t("experience.gtec.period"),
+      description: t("experience.gtec.description"),
+      technologies: t("experience.gtec.technologies", {
+        returnObjects: true,
+      }) as string[],
+      icon: <Building className="h-5 w-5 text-primary mr-2" />,
+    },
+    {
       company: t("experience.astraty.institution"),
       link: t("experience.astraty.link"),
       position: t("experience.astraty.role"),
@@ -257,6 +268,7 @@ export const resume = (t: TFunction): Resume => ({
         "Flask",
         "Django",
         "Express.js",
+        "Spring Boot",
         "React JS",
         "React Native",
         "Electron",
@@ -300,6 +312,7 @@ export const resume = (t: TFunction): Resume => ({
         { name: "Django", key: "skills.django" },
         { name: "NestJS", key: "skills.nestjs" },
         { name: "Express.js", key: "skills.express" },
+        { name: "Spring Boot", key: "skills.springboot" },
         { name: "React JS", key: "skills.react" },
         { name: "React Native", key: "skills.reactNative" },
         { name: "Next.js", key: "skills.nextjs" },

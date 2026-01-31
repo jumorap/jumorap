@@ -9,7 +9,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "role": "Software Engineer",
+    "role": "Solutions Architect",
     "description": "Design and development of scalable and robust architectures",
     "cta": "Get in touch",
     "leading": "Leading",
@@ -20,7 +20,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "Systems and Computing Engineer with over 5 years of experience in software development and architecture, specialized in backend solutions, cloud system deployment, and automation. I have led fullstack projects using modern tools with a focus on performance, infrastructure as code, and high availability. I stand out for my leadership skills and passion for continuous improvement in designing efficient solutions that optimize communication between system components and ensure high software quality. I am looking for new challenges that strengthen my technical capabilities and allow me to lead innovative and high-impact projects.",
+    "description": "Systems and Computer Engineer with over 7 years of experience in software development and architecture, focused on building robust, scalable, cloud-first backend services. I have led and co-led end-to-end technical initiatives, working hands-on in architecture design, data modeling, and development using modern technologies, with a strong emphasis on performance, high availability, and infrastructure as code. I have experience in distributed systems, automation, and cloud deployments, as well as in defining reusable patterns that strengthen critical platforms. I am characterized by solid technical leadership, systems thinking, and a strong orientation toward quality and continuous improvement. I seek high-impact challenges where I can contribute to strategic technical decisions and the evolution of solutions.",
     "architecture": "Architecture",
     "architectureExperience": "Experience in",
     "designAndDevelopment": "design and development",
@@ -60,6 +60,38 @@
     "title": "Experience",
     "present": "Present",
     "technologies": "Technologies",
+    "gtec": {
+      "institution": "GTEC",
+      "link": "https://gtec.com.mx",
+      "role": "Solutions Architect",
+      "period": "May 2025 - Present",
+      "description": "Cloud Solutions Architect at GTEC with hands-on experience designing and leading scalable architectures for financial and insurance platforms. Specialized in extending core financial modules through cloud-native microservices deployed on Kubernetes, leveraging Anthos for hybrid and multicloud environments, and Apigee for secure API management and system integration.",
+      "technologies": [
+        "Technical leadership",
+        "Software architecture",
+        "ApiGee",
+        "Anthos",
+        "Kubernetes",
+        "Microservicios",
+        "Pubsub",
+        "Cloud Functions",
+        "Cloud Run",
+        "Cloud Storage",
+        "Cloud SQL",
+        "Firestore",
+        "Java Spring Boot",
+        "Software development",
+        "Process automation",
+        "Cloud infrastructure",
+        "Requirements analysis",
+        "Technology consulting",
+        "Business strategy",
+        "Effective communication",
+        "Strategic planning",
+        "Technical decision-making",
+        "Scalable solution design"
+      ]
+    },
     "astraty": {
       "institution": "Astraty SAS",
       "link": "https://astraty.com",
